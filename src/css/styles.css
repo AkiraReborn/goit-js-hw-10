@@ -17,4 +17,67 @@ body {
   padding: 8px;
   max-width: 320px;
   margin-bottom: 16px;
+  border: 1px solid black;
+}
+
+#search-box:focus {
+  outline: none;
+}
+
+#search-box::placeholder {
+  font-size: 16px;
+}
+
+#search-box:focus::placeholder{
+  color: transparent;
+}
+
+.country-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: 1px 4px 1px rgba(0, 0, 0, 0.12), 4px 4px 4px rgba(0, 0, 0, 0.06), 4px 4px 6px rgba(0, 0, 0, 0.16);
+  max-width: fit-content;
+}
+
+.country-card {
+  display: inline-block;
+  padding: 25px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  border: 1px solid black;
+}
+
+.country-card--header {
+  display: flex;
+  align-items: center;
+}
+
+.country-card--name {
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.country-card--info {
+  font-style: italic;
+}
+
+.country-list--item {
+  display: flex;
+  align-items: center;
+}
+
+.country-list--item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.country-list--name {
+  font-weight: 400;
+  margin-left: 10px;
+}
+
+.country-value {
+  font-size: 18px;
 }
