@@ -21,7 +21,7 @@ function onInput() {
   } else {
     fetchCountries(searchCountryName)
       .then(countriesNames => {
-        if (countriesNames.length < 4) {
+        if (countriesNames.length < 2) {
           createCountryCard(countriesNames);
           Notiflix.Notify.success('Here your result');
         } else if (countriesNames.length < 10 && countriesNames.length > 1) {
