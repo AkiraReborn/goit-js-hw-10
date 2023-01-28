@@ -9,10 +9,12 @@ const input = document.querySelector('#search-box');
 const countyList = document.querySelector('.country-list');
 const countryInfo = document.querySelector('.country-info');
 
+searchCountryName = '';
+
 input.addEventListener('input', debounce (onInput, DEBOUNCE_DELAY));
 
 function onInput() {
-  const searchCountryName = input.value;
+  searchCountryName = input.value;
   if (searchCountryName === '') {
     clearForm();
     return;
