@@ -12,7 +12,7 @@ const countryInfo = document.querySelector('.country-info');
 input.addEventListener('input', debounce (onInput, DEBOUNCE_DELAY));
 
 function onInput() {
-  searchCountryName = input.value;
+  const searchCountryName = input.value;
   if (searchCountryName === '') {
     clearForm();
     return;
